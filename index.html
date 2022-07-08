@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Task List 2022</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- header links css file so that any formatting is attached to the body -->
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h1>
+            Task List 2022
+        </h1>
+        <!-- task for for input and style --> 
+        <form id ="new-task-form"> 
+            <!-- need id so we know its the input field --> 
+            <input 
+                type = "text"
+                id = "new-task-input"
+                placeholder="what do you have planned?"
+                autocomplete = "off" />
+
+            <!-- another input to actually submit form for the value we can use "" for enter bc in a form--> 
+            <input
+                type ="submit"
+                id="new-task-submit"
+                value="Add Task" />
+            
+        </form>
+
+    </header>
+    <!-- under the header lets create a main tag --> 
+    <main>
+        <section class = "task-list">
+            <h2>Tasks</h2>
+            <!-- can type div#tasks tab to get auto filled --> 
+            <!-- this is where we will put all out tasks --> 
+            <!-- put this in id becuase we need to target in js to add the class --> 
+            <div id="task">
+                <!-- <div class="task">
+                    <div class="content">
+                       
+                        <input 
+                            type="text"
+                            class ="text"
+                            value="My shiny task"
+                            readonly
+                        />
+                    </div>
+
+                    <div class="actions">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
+        
